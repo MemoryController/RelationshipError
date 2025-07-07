@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情感报错</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <!-- 两个并排的输入框 -->
+    <p>总原因</p>
+    <div class="input-group">
+        <input type="text" id="main-event-content" placeholder="事件">
+        <input type="text" id="main-event-time" placeholder="时间">
+
+    </div>
+    <input type="text" id="main-event-detail" placeholder="详细信息">
+
+    <!-- 可扩展的输入框组 -->
+    <p>事件链</p>
+    <div class="input-groups" id="input-groups">
+        <div class="input-group">
+            <input type="text" class="event-chain-content" placeholder="事件">
+            <input type="text" class="event-chain-time" placeholder="时间">
+        </div>
+    </div>
+
+    <!-- 添加新输入框组按钮 -->
+    <button id="add-group-btn">添加原因链</button>
+    <button id="generate-btn">生成报错信息</button>
+
+    <!-- 输出区域 -->
+    <textarea id="output" readonly></textarea>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
